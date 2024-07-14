@@ -33,7 +33,7 @@ body, html{
 .nav-bar{
     width: 100%;
     height: 80px;
-    background-color: antiquewhite;
+    background-color: rgb(204, 192, 192);
     box-shadow: 3px 3px 10px rgb(135, 134, 134);;
     display: flex;
     flex-flow: row wrap;
@@ -69,4 +69,90 @@ ul.menu{
     color: rgb(135, 134, 134);
     text-decoration:underline;
 }
+/* Nav-Bar Completed */
 
+/* Search Bar */
+.banner{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(86, 57, 29,0.2);
+}
+.banner-text-item{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.banner-heading h1{ 
+    font-size: 80px;
+    font-family: Satisfy;
+    color: rgb(16, 11, 2);
+    font-weight: 10px;
+}
+
+.form{
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 131, 131);
+    border-radius: 10px;
+    width: 70%;
+    padding: 1% 2%;
+}
+input{
+    width: 50%;
+    flex: 2;
+}
+.date{
+    width: 20%;
+    flex: 1;
+}
+.banner-text-item input, .banner-text-item .date, .banner-text-item .book{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family:Roboto;
+    border-radius: 4px;
+}
+
+.banner-text-item .book{
+    text-decoration: none;
+    color: #000;
+    padding: 11px;
+    cursor: pointer;
+    background-color: rgb(252, 249, 249);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Barlow Condensed";
+    width: 20%;
+}
+.banner-text-item .book{
+    width: 20%;
+    flex: 1;
+}
